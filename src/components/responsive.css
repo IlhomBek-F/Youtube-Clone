@@ -1,0 +1,514 @@
+@media screen and (max-width: 425px) and (min-width: 300px) {
+  * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+  }
+
+  .header__responsive {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+  }
+
+  .header__responsive__logo {
+    height: 70px;
+    display: flex;
+    object-fit: contain;
+    display: flex;
+    color: white;
+  }
+
+  .header__logo {
+    display: none;
+  }
+
+  .recommended {
+    background-color: #f9f9f9;
+    padding: 0px;
+  }
+
+  .recommended__videos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .responsive__hr {
+    display: none;
+  }
+
+  .menu__icon {
+    display: none !important;
+  }
+  .responsive__side {
+    display: none;
+  }
+  .responsive__mic,
+  .responsive__video,
+  .responsive__appIcon,
+  .responsive__notification {
+    display: none !important;
+  }
+
+  .videoCard {
+    width: 375px;
+    margin-bottom: 10px;
+    /* cursor: pointer; */
+  }
+
+  .videoCard__thumbnail {
+    height: 195px;
+    width: 100%;
+  }
+
+  .video__info {
+    display: flex;
+    padding-right: 30px;
+    padding-left: 10px;
+    margin-top: 10px;
+  }
+
+  .header__in {
+    display: flex;
+    align-items: center;
+  }
+  .header__in .color__input {
+    width: 100%;
+    color: white;
+    outline: none;
+    padding-left: 10px;
+    border: none;
+    border-bottom: 1px solid gray;
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    font-size: 18px;
+    transition: all 1s ease-in-out;
+  }
+
+  .header__inputBtn {
+    font-size: 33px !important;
+    margin-top: 4px;
+    width: 30px !important;
+    background-color: transparent;
+    border: none;
+    color: gray;
+  }
+
+  .header__in input:focus {
+    transition: all 1s ease-in-out;
+    border: none;
+    border-bottom: 1px solid grey;
+  }
+
+  .app__page {
+    display: block;
+  }
+
+  .responsive__header__btn {
+    display: none;
+  }
+
+  .header__btn button {
+    border-radius: 30px;
+    border: 1px solid lightgrey;
+    padding: 3px 10px;
+    font-size: 10px;
+    margin-right: 7px;
+    transition: all 0.9s ease-in-out;
+  }
+
+  .header__btn {
+    margin: 10px 0px;
+    margin-left: 10px;
+  }
+
+  .color__input {
+    color: white;
+  }
+
+  /* Search Page  */
+
+  .search {
+    flex: 0.2;
+    background-color: rgb(245, 245, 245);
+    padding: 0px 10px;
+  }
+  .search__responsive__logo {
+    height: 25px;
+    object-fit: contain;
+    display: flex;
+  }
+
+  .search__input {
+    display: flex;
+    width: 310px;
+    outline: none;
+    background-color: rgb(236, 234, 234);
+    border-radius: 7px;
+    margin: 10px 0px;
+    margin-left: 13px;
+    padding-left: 10px;
+    transition: all 1s ease-in-out;
+  }
+
+  .search__input input {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    outline: none;
+  }
+
+  .search__tune__icon {
+    padding-right: 5px;
+    color: grey;
+  }
+  .responsive__filter {
+    display: none;
+  }
+
+  .search__img img {
+    width: 140px;
+    height: 80px;
+  }
+
+  .search__name {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    padding: 0px 0px;
+  }
+
+  .search__name__responsive h3 {
+    font-size: 8px;
+    padding-left: 0px;
+    padding-bottom: 4px;
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+  }
+
+  .search__title {
+    color: black;
+  }
+
+  .search__title h2 {
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: 500;
+  }
+
+  .search__title p {
+    padding: 4px 0px;
+    font-size: 9px;
+  }
+
+  .search__dot {
+    padding: 0px 10px;
+  }
+
+  .channel__icon {
+    width: 27px !important;
+    height: 27px !important;
+    display: none !important;
+  }
+
+  .check__icon {
+    font-size: 23px !important;
+    padding-left: 5px;
+    padding-top: 1px;
+    display: none !important;
+  }
+
+  .channel__text {
+    font-size: 13px;
+    color: grey;
+    font-weight: 500;
+    display: none;
+  }
+
+  /* Watchvideo Playvideo and Playlist    */
+
+  .header__color {
+    background-color: black !important;
+    padding: 5px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .show {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(241, 241, 241);
+  }
+  .play {
+    background-color: black;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+  }
+
+  .fix__responsive__frame {
+    width: 375px;
+    height: 200px;
+  }
+
+  .playlist {
+    margin-left: 0px;
+    background-color: black;
+  }
+
+  .youtube {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+
+  .youtube h1 {
+    font-size: 16px;
+  }
+
+  .white__icon {
+    color: white;
+    margin-left: 10px;
+  }
+
+  .header__in .watch__input {
+    background: transparent;
+    border-bottom: 1px solid white;
+    padding: 5px 0px;
+    outline: none;
+    border: none;
+  }
+
+  .youtube__icon {
+    color: red !important;
+    font-size: 30px !important;
+  }
+  .like__dislike {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 25px;
+  }
+
+  .content__title {
+    display: none;
+  }
+
+  .content {
+    padding-left: 10px;
+  }
+
+  .video__list {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 0px 0px;
+  }
+
+  .responsive__title__play {
+    padding-left: 10px;
+    color: white;
+  }
+
+  .responsive__title__play p {
+    color: grey;
+  }
+
+  .share {
+    padding-left: 10px;
+  }
+
+  .play__title {
+    width: 100%;
+    font-size: 9px;
+    padding-left: 10px;
+    color: grey;
+  }
+
+  .play__title .title__respon {
+    padding-left: 35px;
+    display: none;
+  }
+
+  .res__cha {
+    padding-right: 5px;
+  }
+
+  .subscribe {
+    align-items: center;
+    margin-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .show__more {
+    display: none;
+  }
+
+  .sub__btn button {
+    padding: 10px 8px;
+    border: none;
+    font-size: 11px;
+    background-color: transparent;
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+  }
+
+  .img {
+    align-items: center;
+    padding-left: 10px;
+  }
+
+  .title {
+    font-size: 13px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .subs__count {
+    font-size: 11px;
+    color: grey;
+    font-weight: 500;
+    padding-bottom: 0px;
+  }
+
+  .avatar {
+    width: 25px !important;
+    height: 25px !important;
+  }
+
+  /*  Comment    */
+
+  .comment__sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid grey;
+  }
+  .sort {
+    display: none;
+  }
+  .comment__app {
+    display: block;
+  }
+  .comment__sort h2 {
+    color: white;
+  }
+  .comment__input {
+    width: 93.5%;
+    border-bottom: 1px solid rgb(202, 200, 200);
+    margin-left: 10px;
+  }
+
+  .comment__btn {
+    float: right;
+    padding-top: 5px;
+    padding-right: 10px;
+  }
+
+  .comment__input input {
+    border: none;
+    outline: none;
+    width: 100%;
+    background: transparent;
+    color: white;
+    padding: 10px 0px;
+  }
+
+  .comment {
+    margin: 20px 0px;
+    padding-left: 0px;
+  }
+
+  .hide__comment {
+    display: none;
+    padding-left: 10px;
+  }
+
+  .comment__form {
+    display: flex;
+    margin-top: 10px;
+    padding-left: 10px;
+  }
+
+  .none__responsive {
+    display: none;
+  }
+  .user__com {
+    display: flex;
+    margin: 20px 0px;
+    padding-left: 10px;
+  }
+
+  .user__name {
+    color: grey;
+  }
+
+  .user__comment__text {
+    color: white;
+  }
+
+  /*  VideoList  */
+
+  .video__list img {
+    width: 375px;
+    height: 195px;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .change {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .change__timestamp {
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+  }
+
+  .play__timestamp {
+    padding-top: 0px;
+    font-size: 11.5px;
+    color: grey;
+  }
+
+  .change__list {
+    display: flex;
+    align-items: center;
+    padding-top: 2px;
+  }
+
+  .change__list h2 {
+    color: white;
+  }
+  .avatar {
+    margin-right: 10px;
+  }
+}

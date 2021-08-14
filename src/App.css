@@ -1,0 +1,710 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header   */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: white;
+}
+
+.youtube {
+  display: none;
+}
+
+.header__logo {
+  height: 25px;
+  object-fit: contain;
+  margin-left: 20px;
+}
+.search__responsive__logo {
+  display: none;
+}
+.header__responsive__logo {
+  height: 100px;
+  object-fit: contain;
+  display: none;
+}
+
+.header__responsive {
+  display: none;
+}
+
+.channel__link {
+  color: black !important;
+  text-decoration: none !important;
+}
+.header__input {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+.header__in {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.mic {
+  font-size: 33px !important;
+  color: grey;
+  margin-left: 15px;
+}
+.header__in .color__input {
+  outline: none;
+  padding-left: 10px;
+  width: 100%;
+  border: 1px solid grey;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.header__in .watch__input {
+  outline: none;
+  padding-left: 10px;
+  width: 100%;
+  border: 1px solid grey;
+  padding: 5px;
+  font-size: 18px;
+}
+.header__in input:focus {
+  border: 1px solid blue;
+}
+
+.header__in input::placeholder {
+  font-size: 16px;
+}
+.header__inputBtn {
+  font-size: 33px !important;
+  margin-top: 4px;
+  width: 66px !important;
+  background-color: #fafafa;
+  border: 1.5px solid lightgrey;
+  color: gray !important;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+}
+
+.header__icon {
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.header__btn {
+  margin: 20px 0px;
+}
+
+.header__btn button {
+  border-radius: 30px;
+  border: 1px solid lightgrey;
+  padding: 6px 20px;
+  font-size: 15px;
+  margin-right: 7px;
+  transition: all 0.9s ease-in-out;
+}
+
+.header__btn button:hover {
+  background-color: lightgrey;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.header__btn button:first-child {
+  background-color: black;
+  color: white;
+}
+
+/*  Sidebar  */
+
+.app__page {
+  display: flex;
+}
+
+.sidebar {
+  flex: 0.2; /* 20% width for sidebar */
+}
+
+.sidebar h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: grey;
+  padding: 10px 20px;
+  font-size: 15px;
+}
+
+.sidebarRow {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.sidebar__icon {
+  color: #606060;
+  font-size: large !important;
+}
+
+.sidebar__title {
+  flex: 1;
+  margin-left: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.sidebarRow:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.sidebarRow:hover > .sidebar__icon {
+  color: red;
+}
+
+.sidebarRow:hover > .sidebar__title {
+  font-weight: bold;
+}
+
+.sidebarRow.selected {
+  background-color: lightgrey;
+}
+
+.sidebarRow.selected > .sidebar__icon {
+  color: red;
+}
+
+.sidebar > hr {
+  height: 1px;
+  border: 0;
+  background-color: lightgrey;
+  margin: 10px 0px;
+}
+
+/* Recommended Video   */
+
+.recommended {
+  flex: 0.8;
+  background-color: #f9f9f9;
+  padding: 0px 10px;
+  padding-bottom: 0;
+}
+
+.recommended h2 {
+  margin-left: 5px;
+  margin-bottom: 20px;
+}
+
+/*  VidoeCard   */
+
+.videoCard {
+  width: 260px;
+  margin-bottom: 40px;
+  /* cursor: pointer; */
+}
+
+.videoCard__thumbnail {
+  height: 140px;
+  width: 250px;
+}
+
+.recommended__videos {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.video__info {
+  display: flex;
+  padding-right: 30px;
+  margin-top: 10px;
+}
+
+.video__text {
+  margin-left: 15px;
+}
+
+.video__text > h4 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.video__text > p {
+  font-size: 14px;
+  color: gray;
+}
+
+.video__avatar {
+  height: 30px !important;
+  width: 30px !important;
+}
+
+.avatar__app {
+  display: none;
+}
+
+/* Subscription */
+
+.subs {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.subs img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 13px;
+}
+
+.subs:hover {
+  cursor: pointer;
+  background-color: rgb(233, 233, 233);
+}
+
+/*  Footer  */
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 15px;
+}
+
+.footer__link a {
+  text-decoration: none;
+  font-weight: bold;
+  color: grey;
+  padding-left: 10px;
+  font-size: 13px;
+}
+
+.footer__link p {
+  color: grey;
+  font-size: 10px;
+  padding: 10px 10px;
+}
+
+/*   WatchVideo     */
+
+.show {
+  display: flex;
+  background-color: rgb(241, 241, 241);
+}
+.fix__frame {
+  width: 853px;
+  height: 480px;
+}
+.play {
+  flex: 0.6;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.playlist {
+  flex: 0.4;
+  margin-left: 20px;
+}
+
+/*  VideoList   */
+
+.video__list {
+  display: flex;
+  width: 400px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.video__list img {
+  width: 170px;
+  height: 100px;
+}
+
+.play__title {
+  font-size: 9px;
+  padding-left: 10px;
+  color: grey;
+}
+
+.play__timestamp {
+  padding-top: 10px;
+  font-size: 14px;
+
+  color: grey;
+}
+
+/*   Comment Section   */
+.like__dislike {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.comment__app {
+  display: none;
+}
+
+.reply {
+  transform: rotate(380deg);
+}
+
+.share {
+  display: flex;
+  align-items: center;
+}
+.border__grey {
+  display: flex;
+  align-items: center;
+  border-bottom: 2.5px solid grey;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.share h2 {
+  font-size: 15px;
+  color: grey;
+  padding: 0 10px;
+}
+
+.title__play h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.All {
+  color: darkgrey;
+}
+
+/*  Subscribe  */
+
+.subscribe {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.img {
+  display: flex;
+}
+
+.content {
+  padding-left: 17px;
+}
+
+.title {
+  font-size: 16px;
+  color: rgb(83, 79, 79);
+  cursor: pointer;
+}
+
+.subs__count {
+  font-size: 14px;
+  color: grey;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.content__title {
+  font-family: sans-serif;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+.show__more {
+  font-size: 13px;
+  color: grey;
+  font-weight: 600;
+  font-family: sans-serif;
+  padding-bottom: 30px;
+  cursor: pointer;
+}
+
+.sub__btn button {
+  padding: 10px 15px;
+  border: none;
+  font-size: 16px;
+  background-color: rgb(211, 7, 7);
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.bold {
+  border: 2px solid lightgrey;
+}
+
+.covid {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+
+.covid h2 {
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.close {
+  color: grey;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/*   Search Page    */
+
+.search {
+  flex: 0.8;
+  background-color: rgb(245, 245, 245);
+  padding: 0px 20px;
+}
+
+.search__img img {
+  width: 365px;
+  height: 200px;
+}
+
+.container {
+  display: flex;
+  padding-top: 16px;
+  cursor: pointer;
+}
+
+.tune__icon {
+  cursor: pointer;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightgrey;
+  padding: 10px 0px;
+  font-size: 10px;
+  color: grey;
+  cursor: pointer;
+}
+
+.filter h2 {
+  padding-left: 10px;
+}
+
+.search__content {
+  padding-left: 15px;
+}
+
+.search__title {
+  color: grey;
+}
+
+.search__title h2 {
+  font-size: 17px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.search__title p {
+  padding: 4px 0px;
+  font-size: 12px;
+}
+
+.search__name {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  padding: 10px 0px;
+}
+
+.search__name h3 {
+  padding-left: 10px;
+  padding-bottom: 4px;
+  color: grey;
+}
+
+.channel__icon {
+  width: 27px !important;
+  height: 27px !important;
+}
+
+.check__icon {
+  font-size: 23px !important;
+  padding-left: 5px;
+  padding-top: 1px;
+}
+
+.channel__text {
+  font-size: 13px;
+  color: grey;
+  font-weight: 500;
+}
+
+.search__hr {
+  margin: 15px 0px;
+  color: rgb(245, 245, 245);
+}
+
+/*  Comment Section      */
+
+.comment {
+  margin: 20px 0px;
+}
+
+.comment__sort {
+  display: flex;
+  align-items: center;
+}
+
+.comment__sort h2 {
+  color: grey;
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 100;
+  margin-right: 10px;
+}
+
+.comment__sort h3 {
+  text-transform: uppercase;
+  color: rgb(39, 38, 38);
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 100;
+  margin-left: 10px;
+}
+
+.hide__comment {
+  display: flex;
+  margin-top: 30px;
+}
+.sort__icon {
+  color: rgb(39, 38, 38);
+  font-size: 27px !important;
+  margin-left: 30px;
+}
+
+.sort {
+  display: flex;
+}
+
+.sort__comment {
+  display: flex;
+  align-items: center;
+}
+
+.comment__form {
+  display: flex;
+  margin-top: 40px;
+}
+
+.none__responsive {
+  display: flex;
+}
+.comment__in {
+  width: 100%;
+}
+.comment__input {
+  width: 100%;
+  border-bottom: 1px solid rgb(202, 200, 200);
+  margin-left: 10px;
+}
+
+.comment__input input {
+  border: none;
+  outline: none;
+  width: 100%;
+  background: transparent;
+  padding: 10px 10px;
+}
+
+.comment__input input::placeholder {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(102, 102, 102);
+}
+
+.comment__btn {
+  float: right;
+  padding-top: 5px;
+}
+
+.comment__input input:focus .comment__input {
+  border-bottom: 4px solid rgb(202, 200, 200);
+}
+
+.can__com__btn {
+  font-size: 14px;
+  padding: 5px;
+  font-weight: bold;
+  color: grey;
+  border: none;
+  background-color: rgb(221, 221, 221);
+  text-transform: uppercase;
+}
+
+.can {
+  cursor: pointer;
+  background-color: transparent;
+  margin-right: 16px;
+}
+
+.com {
+  background-color: blue;
+  color: white;
+}
+
+.user__com {
+  display: flex;
+  margin: 20px 0px;
+}
+
+.user__comment {
+  margin-left: 16px;
+}
+
+.user__avatar {
+  margin-top: 10px;
+}
+.user__name {
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+}
+
+.user__comment__text {
+  padding: 5px 0px;
+}
+
+.like__comment {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.comment__icon {
+  font-size: 16px !important;
+  margin-right: 14px !important;
+  color: grey;
+  transition: all 0.4s ease-in-out;
+}
+
+.comment__icon:hover {
+  color: rgb(29, 29, 29);
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.comment__reply {
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-left: 10px;
+  color: grey;
+  font-family: sans-serif;
+  cursor: pointer;
+}
